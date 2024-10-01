@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer laboratory Resevation System</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+ 
+  
+  
+  <div class="wrapper">
+    <form action="#">
+      <h2 style="color: rgba(229, 255, 0, 0.91);">Computer laboratory Reservation System</h2>
+        <div class="input-field">
+        <input type="text" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Enter your fucking password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Sample correct credentials
+      const correctEmail = "user@example.com";
+      const correctPassword = "password123";
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const errorMessage = document.getElementById("errorMessage");
+
+      if (email === correctEmail && password === correctPassword) {
+        alert("Login successful!");
+        // You can redirect to another page or perform further actions here
+      } else {
+        errorMessage.textContent = "Incorrect email or password. Please try again.";
+      }
+    });
+  </script>
+
+</body>
+</html>

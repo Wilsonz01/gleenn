@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/flipping.css">
+		<link rel="stylesheet" href="css/nav.css">
+    <link rel="icon" type="image/x-icon" href="assets/image/pfo-bfr-logo.png">
+    <title>Provincial Fisheries Office in Misamis OCcidental</title>
+
+	
+		<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>	
+		<nav class="nav navbar bg-success">
+			<div class="topnav col-md-12">
+				<h5>
+				<div class="mab">
+
+							<a href="index.html" class=" btnnav "> <i class="fa fa-home"></i> Home Page </a>
+				<a href="about.html" class="btnnav"><i class="fa fa-hand"></i>  About </a>
+						<a href="contactus.html" class="btnnav"><i class="fa fa-phone"></i>  Contact US </a>     
+				<button type="button" class="mab__button--menu btnnav btnb text-light"><i class="fa fa-users"></i> Login </button> 
+						<!-- button list          -->
+		<div class="mab__list">
+			<a href="login/aquaculturist.php" class="text-start" style="width: 100%;"> <i class="fa fa-user"></i> BFAR-10 - PFO Misamis Occidental </a> <hr>
+		<a href="login/agriculturist.php" class="text-start "style="width: 100%;"> <i class="fa fa-user"></i> LGU - MAO </a>
+		</div>	
+					</div>         			
+				</h5>													
+				</div>
+		</nav>
+			
+		<script>
+			{
+				//enabling buttons
+				document.querySelectorAll(".mab").forEach(multiAction =>{
+					const menuButton = multiAction.querySelector(".mab__button--menu");
+					const list = multiAction.querySelector(".mab__list");	
+		
+					menuButton.addEventListener("click", () => {
+						list.classList.toggle("mab__list--visible");
+					});
+				});
+				document.addEventListener("click", e =>{
+					const keepOpen = (
+						e.target.matches(".mab__list") || 
+						e.target.matches(".btnb")
+					);
+					if(keepOpen) return;
+					document.querySelectorAll(".mab__list").forEach(list => {
+						list.classList.remove("mab__list--visible");
+					})
+				});
+			}
+		</script>	
+		
+  <div class="col-md-12 ">			
+		<div class="card-body">
+					<div class="row">
+						<div class="col-md-6" style="margin-top:7%;">
+						<h5>	<img src="assets/image/pfo-bfr-logo.png" alt=""class="img"></h5>
+						</div>
+						<div class="col-md-6">
+							
+							<div class="card-title">
+								<h1 style="margin-top: 15%; font-weight:bolder; " class="text-primary"> Contact Us!</h1>
+								<h5 class="  text-secondary " style=" font-weight:bolder ;margin-top: 3%;">5V22+J5R, Ozamiz City,<br> Misamis Occidental <br><br> (TEL No.)</h5>
+							</div>
+						</div>
+					</div>			
+		</div>	
+  </div>
+	<br>
+	<div class="col-md-12 col d-flex justify-content-center" >
+		<div class="card col-md-10">
+			<div class="card-body" style="background-color: #ffffff00; margin-bottom: 6%;" >
+				<div class="card-header"  style="background-color: #ffffff00;">
+					<h2 class="text-center text-secondary" style="font-weight:bolder;">Technical Support <img src="assets/image/support_team2.png" height="30vh" alt="support_team" srcset=""> Team</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-6 mt-5">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="assets/image/rrenz.png" height="200vh" alt="" srcset="">
+							</div>
+						<div class="col-md-8 ">
+							<b class="d-flex text-primary">REYNALDO AQUIT</b>
+							<p><b>Project Manager.</b></p>
+                            <i>Web Developer Software Engineer</i> <br>
+                            <i>Data Analyst</i><br>
+                            <i>Researcher</i>
+						</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 mt-5">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="assets/image/jack.png" height="200vh" alt="" srcset="">
+							</div>
+						<div class="col-md-8 ">
+							<b class="d-flex text-primary">JACKIE GOMEZ</b>
+							<i>Quality Assurance Engineer</i><br>
+                            <i>Researcher</i><br>
+                            <i>File Clerk</i>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 mt-5">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="assets/image/lei.png" height="200vh" alt="" srcset="">
+							</div>
+						<div class="col-md-8 ">
+							<b class="d-flex text-primary">LEI-AN SAMONTE</b>
+							<i>Quality Assurance Engineer</i><br>
+                            <i>Researcher</i><br>
+                            <i>File Clerk</i>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 mt-5">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="assets/image/rice_bente.png" height="200vh" alt="" srcset="">
+							</div>
+						<div class="col-md-8 ">
+							<b class="d-flex text-primary">RICA BENTE</b>
+							<i>Quality Assurance Engineer</i><br>
+                            <i>Researcher</i><br>
+                            <i>File Clerk </i>
+						</div>
+						</div>
+					</div>				
+					
+				</div>
+			</div>
+            <div class="col-md-12">
+                    <div class="card bg-dark text-light">
+                        <p class="p-5">
+                            <b style="font-size:20px;">
+                                <i class="fa fa-envelope"></i> aquit.reynaldo@gmail.com <br>
+                            <i class="fa fa-phone"></i> 09387633029
+                                </b>
+                            </p>
+                        </div>
+                </div>
+		</div>
+	</div> 
+  <div class="footer " >		
+	<div class="text-dark p-2" style="float: right; font-size: smaller;">Copyright &copy; pfo-misamis-occidental.com</div>
+  </div>
+
+<div style="text-align:right;position:fixed;bottom:3px;right:3px;width:100%;z-index:999999;cursor:pointer;line-height:0;display:block;"><a target="_blank" href="https://www.freewebhostingarea.com" title="Free Web Hosting with PHP5 or PHP7"><img alt="Free Web Hosting" src="https://www.freewebhostingarea.com/images/poweredby.png" style="border-width: 0px;width: 180px; height: 45px; float: right;"></a></div>
+</body>
+</html>
+
+<style>
+    /* body{
+        background-image: url('assets/image/pfo-bfr-logo.png');
+        background-size: 4vh;
+    } */
+		body {
+  background:
+  linear-gradient(110deg, #d1f5de 50%, #9ae7ba 50%, #9ae7ba 52%, #FFFFFF 52%, #FFFFFF 0) 0 0/100% calc(100% - 10px) no-repeat,
+  linear-gradient(110deg, #d1f5de 52%, transparent 0) 0 100%/100% 100% no-repeat;
+  background-image: url('assets/image/farmer1.jpg');
+
+}
+.card-body{
+	background-color: rgba(133, 247, 129, 0.911);
+	width: 100%;
+}
+.btn{
+	background-color: #3e8e41;
+	font-size: large;
+	color: white;
+}
+.btn:hover{
+	background-color: rgb(255, 102, 0);
+	font-size: large;
+	color: white;
+}
+.navbar{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */}
+  .btnnav{
+	border-radius: 5px;
+  }
+	
+	   /* responsive font-size */
+		 @media screen and (min-width: 601px) {
+			.img{
+		height: 30vh; float: right; margin-right: 4%; margin-bottom: 8%; margin-top: 7%;
+	}
+  h5 {
+   
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h5 {
+    font-size: 15px;
+  }
+	.img{
+		width: 50%;
+		margin-top: 10%
+	}
+
+}
+</style>
